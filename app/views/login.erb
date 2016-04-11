@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Login </title>
+</head>
+<body>
+
+  <div class="global-header" >
+    <div style="background-image:url(/pictures/Pic2.jpg)"></div>
+    <div style="background-image:url(/pictures/Pic11.jpg)"></div>
+    <div style="background-image:url(/pictures/Pic10.jpg)"></div>
+    <div style="background-image:url(/pictures/Pic9.jpg)"></div>
+    <div style="background-image:url(/pictures/Pic4.jpg)"></div>
+    <div style="background-image:url(/pictures/Pic5.jpg)"></div>
+    <div style="background-image:url(/pictures/Pic6.jpg)"></div>
+    <div style="background-image:url(/pictures/Pic8.jpg)"></div>
+    <div style="background-image:url(/pictures/Pic7.jpg)"></div>
+  </div>
+
+  <div class="col-lg-12 col-md-12 col-sm-12">
+    <h1 class="login-title">Login to View Your Contact List</h1>
+  </div> 
+
+  <div class="col-lg-12 col-md-12 col-sm-12 " id="login-container">
+    <div class="login-info"> 
+      <h3> Credentials </h3> 
+      <% if @login_failed %>
+        <h5 style="text-align: center; color:white;"> Login Failed</h5>
+      <% end %>
+      <% if @failed %>
+        <h5 style="text-align: center; color:white;"> Must be logged in to access!</h5>
+      <% end %>
+    
+      <form method="post">
+        <label> Enter Email </label>
+        <input type="text" placeholder="Email" name="email" required>
+        <label> Enter Password </label>
+        <input type="password" placeholder="Password" name="password" required>
+        <input type="Submit" value="Login">
+      </form>
+      <a href="/Signup"><h6> Sign Up! </h6></a>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+.title {
+  font-family: Helvetica;
+  text-align: center;
+}
+
+.global-header {
+  
+}
+.global-header div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  background-size: cover;
+}
+
+.login-title {
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+  font-size: 50px;
+}
+
+#login-container {
+  margin-top: 100px;
+  height: 400px;
+}
+
+.login-info {
+  width: 30%;
+  margin: 20px auto;
+  height: 380px;
+  background:rgba(0,0,0,0.3);
+}
+
+.login-info h3{
+  color:white;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.login-info label {
+  display: block;
+  margin: auto;
+  text-align: center;
+  color:white;
+}
+
+.login-info input{
+  display:block;
+  width:300px;
+  margin:20px auto;
+  padding:15px;
+  background:rgba(0,0,0,0.5);
+  color:#fff;
+  border:0;
+}
+
+.login-info input:nth-child(5){
+  background:#27ae60;
+  border:0;
+  color:#fff;
+  padding:10px;
+  font-size:20px;
+  width:330px;
+  margin:20px auto;
+  display:block;
+  cursor:pointer;
+}
+.login-info input:nth-child(5):active{
+  background: #8B4513;
+}
+
+.login-info h6{
+  text-align: center;
+  color: white;
+}
+
+
+#contact-table {
+  height: 600px;
+  text-align: center;
+  overflow: auto;
+  background:rgba(0,0,0,0.2);
+  border-radius: 30px;
+}
+
+
+#contact-table td {
+  width: 10%;
+  color: white;
+  border-bottom: 1px solid white;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  font-size: 15px;
+}
+
+.input_box {
+  background:rgba(0,0,0,0.5);
+  color:#fff;
+  border:5 ;
+}
+
+.submit_button {
+  background: green;
+}
+
+
+
+
+#signup-container {
+  margin-top: 50px;
+  height: 550px;
+}
+
+
+
+.Signup-info {
+  width: 30%;
+  margin: 20px auto;
+  height: 500px;
+  background:rgba(0,0,0,0.2);
+}
+
+.Signup-info h3{
+  color:white;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.Signup-info label {
+  display: block;
+  margin: auto;
+  text-align: center;
+  color:white;
+}
+
+.Signup-info input{
+  display:block;
+  width:300px;
+  margin:20px auto;
+  padding:15px;
+  background:rgba(0,0,0,0.5);
+  color:#fff;
+  border:0;
+}
+
+.Signup-info h6{
+  text-align: center;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+

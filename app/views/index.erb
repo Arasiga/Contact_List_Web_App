@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Contact List App
+  </title>
+  <script src="javascript/indexJs.js"></script>
+</head>
+<body>
+
+  <div class="global-header" >
+    <div style="background-image:url(/pictures/Pic2.jpg)"></div>
+    <div style="background-image:url(/pictures/Pic11.jpg)"></div>
+    <div style="background-image:url(/pictures/Pic10.jpg)"></div>
+    <div style="background-image:url(/pictures/Pic9.jpg)"></div>
+    <div style="background-image:url(/pictures/Pic4.jpg)"></div>
+    <div style="background-image:url(/pictures/Pic5.jpg)"></div>
+    <div style="background-image:url(/pictures/Pic6.jpg)"></div>
+    <div style="background-image:url(/pictures/Pic8.jpg)"></div>
+    <div style="background-image:url(/pictures/Pic7.jpg)"></div>
+  </div>
+
+
+  <div class="col-lg-11">
+    <h1 class="title" style="color:white;"> Welcome to your contact list! </h1> 
+    <hr>
+  </div>
+  <div class="col-lg-1">
+    <a href="/">
+    <button class="btn btn-danger" style="margin-top: 20px;"> Logout </button></a>
+  </div>
+
+  <div id="container">
+    <div class="col-lg-12 centered" id="contact-table">
+        <table id="new_contact">
+          <tr>
+            <td> Contact Name </td>
+            <td> Email </td>
+            <td> Phone Number </td>
+            <td> Personal Message </td>
+            <td> Actions </td>
+          </tr>
+          
+          <tr>
+            <form id="contact_create">
+              <td> 
+                <input class="input_box" type="text" placeholder="Contact Name" name="name" id="contact_name" required> 
+              </td>
+              <td> 
+                <input class="input_box" type="email" placeholder="Email" name="email" id="contact_email" required> 
+              </td>
+              <td> 
+                <input class="input_box" type="number" placeholder="Phone Number" name="phone" id="contact_phone" required>
+              </td>
+              <td> 
+                <input class="input_box" type="text" placeholder="Personal Message" name="message" id="contact_message" >
+              </td>
+              <td> 
+                <input class="submit_button" type="submit" value="Create Contact!">
+              </td>
+            <form>
+          </tr>
+
+          <% @user.contacts.each do |contact| %>
+            <tr id='contact_<%= contact.id%>'>
+              <td><%= contact.name %></td>
+              <td><%= contact.email %></td>
+              <td><%= contact.phone %></td>
+              <td><%= contact.message %></td>
+              <td> <a class="edit" href='#' data-id=<%= contact.id%> style="color:white;">EDIT</a>/<a style="color:white;" data-id=<%= contact.id%> class="delete"> DELETE</a></td>
+            </tr>
+          <% end %>
+
+
+        </table>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
