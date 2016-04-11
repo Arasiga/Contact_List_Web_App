@@ -43,7 +43,7 @@
           <tr>
             <form id="contact_create">
               <td> 
-                <input class="input_box" type="text" placeholder="Contact Name" name="name" id="contact_name" required> 
+                <input class="input_box" pattern=".{3,35}" title="3 to 35 characters long" type="text" placeholder="Contact Name" name="name" id="contact_name" required> 
               </td>
               <td> 
                 <input class="input_box" type="email" placeholder="Email" name="email" id="contact_email" required> 
